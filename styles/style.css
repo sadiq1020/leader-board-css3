@@ -1,0 +1,197 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Kalam:wght@300&family=Lora&family=M+PLUS+1+Code:wght@100;300&family=Poppins:wght@500&family=Roboto:ital,wght@0,400;0,500;1,500&family=The+Nautigal:wght@700&family=Volkhov&display=swap');
+
+/* common styls & utilities*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+
+.container {
+    background-color: #dddbdb;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+
+
+
+/* Top players style */
+
+.top-players {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player-name {
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+/* top blogs style  */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 26px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog .thumbnail img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-info {
+    font-size: 18px;
+}
+
+.blog-title {
+    font-size: 20px;
+}
+
+.blog-author {
+    font-size: 16px;
+    color: #9F9F9F;
+
+}
+
+.blog-author a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.blog .blog-info {
+    margin-left: 16px;
+}
+
+/*----------------
+   courses style 
+ ----------------*/
+
+.courses {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 24px;
+}
+
+.courses .course-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.filled {
+    color: #FFC014;
+}
+
+.empty {
+    color: #AEAEAE;
+}
+
+.star-rating {
+    color: #A2A2A2;
+}
+
+.fa-clock {
+    color: red;
+}
+
+.time-duration {
+    color: red;
+    background-color: #FFE4E8;
+    border-radius: 14.6913px;
+    padding: 5px;
+}
+
+/*---------------------
+     Media Quaries 
+----------------------*/
+
+/* Mobile device */
+@media screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .courses {
+        flex-direction: column;
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+
+    /* .blogs, .courses{
+        display: none;
+    }*/
+}
+
+/* tablet devices */
+
+@media screen and (min-width: 689px) and (max-width: 992px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
